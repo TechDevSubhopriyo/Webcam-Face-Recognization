@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-head">
+                <h3>Face Detection WebApp in Flask</h3>
+            </div>
+            <div class="card-body">
+                <img src="{{ url_for('video') }}" alt="Video will load here">  
+            </div>      
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <div class="card-head">
+                <h3>Attendance Form</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <label for="name">Name</label><br>
+                    <input placeholder="Name" id="name">
+                </form>
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
